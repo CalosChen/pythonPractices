@@ -1,10 +1,13 @@
 #!/usr/bin/python3
 #--encoding-utf-8--
 
-import env, os, sys, re
+import os, sys, re
 
 print("Hello world!")
 quit= False
+
+print(len(sys.argv))
+print(sys.argv[1])
 
 def rename(dir,oldString,newString):
     for root, dirs, files in os.walk(dir):
@@ -15,6 +18,7 @@ def rename(dir,oldString,newString):
             content=reg.sub(newString,content)
             fileStream.write(content)
             fileStream.close()
+
 
 
             
