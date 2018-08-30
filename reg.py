@@ -17,4 +17,4 @@ aset=set()
 aset={1,3,4}
 aturple=(1,2,3)
 
-print(range(3))
+print(aset)
