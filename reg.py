@@ -10,3 +10,11 @@ if matches:
 else:
     print("No match!")
     pass
+
+alist=[1,2,3,4]
+adict={"a":1,"b":2,"c":3}
+aset=set()
+aset={1,3,4}
+aturple=(1,2,3)
+
+print(range(3))

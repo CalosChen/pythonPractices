@@ -23,3 +23,4 @@ app = Application()
 app.master.title('Hello World')
 # 主消息循环:
 app.mainloop()
+
