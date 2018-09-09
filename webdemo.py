@@ -9,7 +9,7 @@ def hello_world():
 
 @app.route('/str/<what>',methods=['GET'])
 def str(what):
-    return 'hello why%s %d'%(what,56,)
+    return 'hello why%s %s'%(what,request.query_string,)
 
 @app.route('/why/<what>')
 def why(what):
