@@ -16,7 +16,11 @@ cursor.execute("SELECT VERSION()")
  
 # 使用 fetchone() 方法获取单条数据.
 data = cursor.fetchone()
- 
+sql='select * from table1'
+cursor.execute(sql)
+rs=cursor.fetchall()
+for row in rs:
+    print('%s %s'%(row[0],row[1],))
 print ("Database version : %s " % data)
  
 # 关闭数据库连接
