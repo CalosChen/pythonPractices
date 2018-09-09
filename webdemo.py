@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 from flask import Flask,render_template,request
+from urllib import parse
 app = Flask(__name__)
 
 @app.route('/')
@@ -9,7 +10,7 @@ def hello_world():
 
 @app.route('/str/<what>',methods=['GET'])
 def str(what):
-    return 'hello why%s %s'%(what,request.query_string,)
+    return 'hello why%s %s'%(what,request.args.get('id'),)
 
 @app.route('/why/<what>')
 def why(what):
