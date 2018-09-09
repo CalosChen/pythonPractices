@@ -1,7 +1,6 @@
 #!/usr/bin/python
 
 from flask import Flask,render_template,request
-from urllib import parse
 app = Flask(__name__)
 
 @app.route('/')
